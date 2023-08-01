@@ -15,4 +15,96 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DESENVOLVIMENTO EDUCACIONAL UNIFICADOR DE SAÚDE"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/centerDEUS"
+            android:layout_width="39dp"
+            android:layout_height="32dp"
+            android:imeActionLabel="DESENVOLVIMENTO EDUCACIONAL UNICO DE SAÚDE"
+
+            android:text="D.E.U.S"
+            android:textColor="@color/white"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageButton
+            android:id="@+id/sonoButton"
+            android:layout_width="74dp"
+            android:layout_height="104dp"
+            android:imeActionLabel="DESENVOLVIMENTO EDUCACIONAL UNICO DE SAÚDE"
+            android:src="@drawable/sono"
+            android:text="SONO"
+            android:textColor="@color/white"
+
+
+            app:layout_constraintCircle="@+id/centerDEUS"
+            app:layout_constraintCircleAngle="65"
+            app:layout_constraintCircleRadius="45dp"
+            app:layout_constraintStart_toEndOf="@+id/centerDEUS"
+            app:layout_constraintTop_toTopOf="@+id/centerDEUS"
+
+
+            />
+
+        <ImageButton
+            android:layout_width="90dp"
+            android:layout_height="69dp"
+            android:imeActionLabel="DESENVOLVIMENTO EDUCACIONAL UNICO DE SAÚDE"
+            android:src="@drawable/atividadefisica"
+
+            android:text="ATIVIDADE FISICA"
+            android:textColor="@color/white"
+
+
+            app:layout_constraintCircle="@+id/centerDEUS"
+            app:layout_constraintCircleAngle="180"
+            app:layout_constraintCircleRadius="45dp"
+            app:layout_constraintStart_toEndOf="@+id/centerDEUS"
+            app:layout_constraintTop_toTopOf="@+id/centerDEUS"
+
+
+            />
+
+        <ImageButton
+            android:layout_width="62dp"
+            android:layout_height="95dp"
+            android:background="@drawable/alimentacao"
+            android:imeActionLabel="DESENVOLVIMENTO EDUCACIONAL UNICO DE SAÚDE"
+
+            android:text="ALIMENTAÇÃO"
+            android:textColor="@color/white"
+
+
+            app:layout_constraintCircle="@+id/centerDEUS"
+            app:layout_constraintCircleAngle="290"
+
+            app:layout_constraintCircleRadius="55dp"
+
+            app:layout_constraintStart_toEndOf="@+id/centerDEUS"
+            app:layout_constraintTop_toTopOf="@+id/centerDEUS"
+
+
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
