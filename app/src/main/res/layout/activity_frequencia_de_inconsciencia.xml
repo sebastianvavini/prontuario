@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="22dp"
+    tools:context=".FrequenciaDeInconscienciaActivity">
+
+
+    <TextView
+        android:id="@+id/textView_nivel"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:hint="Nível de Inconsciência"
+        android:textSize="25dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+    <LinearLayout
+
+        android:id="@+id/root_layout"
+        android:layout_width="350dp"
+        android:layout_height="335dp"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+
+        android:padding="22dp"
+
+        app:layout_constraintTop_toTopOf="@+id/textView_nivel"
+        app:layout_constraintStart_toStartOf="@+id/textView_nivel"
+        app:layout_constraintEnd_toEndOf="@+id/textView_nivel"
+        >
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Com que frequência você pensa no passado ou futuro?"
+
+                android:textSize="20sp"/>
+
+            <RadioButton
+                android:id="@+id/fisiologica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100%"
+                />
+
+            <RadioButton
+                android:id="@+id/seguranca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="90%"
+                />
+
+            <RadioButton
+                android:id="@+id/social"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="70%"
+                />
+
+            <RadioButton
+                android:id="@+id/estima"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50%"
+                />
+
+            <RadioButton
+                android:id="@+id/realizacao_pessoal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20%"
+                />
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_avancar_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Avançar"
+        app:layout_constraintTop_toBottomOf="@+id/root_layout"
+        app:layout_constraintStart_toStartOf="@+id/root_layout"
+        app:layout_constraintEnd_toEndOf="@+id/root_layout"
+
+        />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
