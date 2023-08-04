@@ -32,6 +32,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         />
 
+    
+
     <EditText
         android:id="@+id/editText_expectativa"
         android:layout_width="0dp"
@@ -89,7 +91,7 @@
         />
 
     <Button
-        android:id="@+id/button_avancar_para_mensuravel"
+        android:id="@+id/button_avancar_para_nivel_inconsciencia"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Avançar"
