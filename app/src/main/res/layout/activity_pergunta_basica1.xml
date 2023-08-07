@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="22dp"
+    tools:context=".BaseActivity">
+
+
+    <TextView
+        android:id="@+id/textView_tres_perguntas_basicas"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:hint="Três perguntas Básicas:"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/um"
+        android:layout_width="350dp"
+        android:layout_height="220dp"
+
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+
+        app:layout_constraintTop_toTopOf="@+id/textView_tres_perguntas_basicas"
+        app:layout_constraintStart_toStartOf="@+id/textView_tres_perguntas_basicas"
+        app:layout_constraintEnd_toEndOf="@+id/textView_tres_perguntas_basicas"
+        >
+
+        <RadioGroup
+            android:id="@+id/radio_group_oferta_demanda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@color/white"
+            android:padding="15dp"
+
+            app:layout_constraintTop_toTopOf="@+id/um"
+            app:layout_constraintStart_toStartOf="@+id/um"
+            app:layout_constraintEnd_toEndOf="@+id/um"
+            >
+
+            <TextView
+                android:id="@+id/text_dormiu_bem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pergunta 1: Dormiu bem esta noite?"
+
+                android:textSize="20sp"
+                />
+
+            <RadioButton
+                android:id="@+id/mal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mal"
+                />
+
+            <RadioButton
+                android:id="@+id/medio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Médio"
+                app:layout_constraintStart_toEndtOf="@+id/mal"
+                app:layout_constraintTop_toEndOf="@+id/mal"
+                app:layout_constraintEnd_toEndOf="@+id/mal"
+                />
+
+            <RadioButton
+                android:id="@+id/Bem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bem"
+                app:layout_constraintStart_toEndtOf="@+id/mal"
+                app:layout_constraintTop_toEndOf="@+id/mal"
+                app:layout_constraintEnd_toEndOf="@+id/mal"
+                />
+
+
+        </RadioGroup>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <Button
+        android:id="@+id/button_avancar_para_nivel_inconsciencia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Avançar"
+        android:layout_gravity="start"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="64dp"
+
+        app:layout_constraintTop_toBottomOf="@+id/um"
+        app:layout_constraintEnd_toEndOf="@+id/um"
+        app:layout_constraintStart_toStartOf="@+id/um"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
